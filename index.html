@@ -93,6 +93,44 @@
       margin: 20px auto;
       border-radius: 12px;
     }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      background-color: #25d366;
+      padding: 10px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+    }
+
+    .whatsapp-float img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .whatsapp-float span {
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: sans-serif;
+    }
+
+    @media (max-width: 480px) {
+      .whatsapp-float span {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -163,6 +201,11 @@
     <p><strong>→ Funciona no aplicativo?</strong><br> Sim, direto no app do ChatGPT.</p>
   </section>
 </div>
+
+<a class="whatsapp-float" href="https://wa.me/5577981546479?text=Olá%2C+preciso+de+ajuda+com+o+acesso+premium+do+ChatGPT" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  <span>Precisa de ajuda?</span>
+</a>
 
 <footer>
   &copy; 2025 Acesso Premium ChatGPT Plus. Todos os direitos reservados.
