@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Acesso Premium ChatGPT Plus</title>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Acesso Premium ChatGPT Plus
+  </title>
   <style>
-    body {
+   body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f7fa;
@@ -93,80 +95,426 @@
       margin: 20px auto;
       border-radius: 12px;
     }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      background-color: #25d366;
+      padding: 10px 14px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.05);
+    }
+
+    .whatsapp-float img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .whatsapp-float span {
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: sans-serif;
+    }
+
+    @media (max-width: 480px) {
+      .whatsapp-float span {
+        display: none;
+      }
+    }
+  
+    .accordion-btn {
+        background-color: #1e293b;
+        color: #ffffff;
+        font-size: 15px;
+        border-radius: 0;
+        border-bottom: 1px solid #334155;
+    }
+
+    .accordion-btn:hover {
+        background-color: #334155;
+    }
+
+    .accordion-content {
+        background-color: #f8fafc;
+        border-bottom: 1px solid #e2e8f0;
+    }
+    
+    .accordion-btn {
+        background-color: #10b981;
+        color: #ffffff;
+        font-size: 15px;
+        border-bottom: 1px solid #ffffff;
+        border-radius: 0;
+    }
+
+    .accordion-btn:hover {
+        background-color: #0e9e6e;
+    }
+
+    .accordion-content {
+        background-color: #ecfdf5;
+        border-bottom: 1px solid #d1fae5;
+    }
+    
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-delay-1 { animation-delay: 0.2s; }
+  .fade-delay-2 { animation-delay: 0.4s; }
+  .fade-delay-3 { animation-delay: 0.6s; }
+  .fade-delay-4 { animation-delay: 0.8s; }
   </style>
-</head>
-<body>
-
-<header>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="Logo ChatGPT">
-  <h1>Desbloqueie o Poder do ChatGPT Plus</h1>
-  <p class="subtitulo">Acesse recursos avançados de IA para transformar sua rotina.</p>
-</header>
-
-<div class="section">
-  <div class="cta">
-    <a href="https://pay.cakto.com.br/gnrmatw_340923?affiliate=JHvnVVhw" target="_blank">Garanta seu Acesso Premium Agora</a>
+ </head>
+ <body>
+  <header>
+   <img alt="Logo ChatGPT" src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"/>
+   <h1>
+    Cansado do ChatGPT travando ou limitando o que você precisa?
+    <br/>
+    <span style="color:#10b981;">
+     Desbloqueie o poder real da IA com o Plus
+    </span>
+   </h1>
+   <p class="subtitulo">
+    Acesse recursos avançados de IA para transformar sua rotina.
+   </p>
+  </header>
+  <div style="text-align:center; font-weight:bold; color:#b91c1c; margin-top:20px;">
+   ⚠️ Acesso promocional expira em:
+   <span id="contador">
+   </span>
   </div>
+  <script>
+   function iniciarContador(dias) {
+  const agora = new Date().getTime();
+  const fim = agora + dias * 24 * 60 * 60 * 1000;
+  const timer = setInterval(function () {
+    const agora = new Date().getTime();
+    const distancia = fim - agora;
 
-  <section class="benefits">
-    <h2>Por que escolher o ChatGPT Plus?</h2>
+    if (distancia < 0) {
+      clearInterval(timer);
+      document.getElementById("contador").innerHTML = "Oferta encerrada!";
+      return;
+    }
+
+    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    document.getElementById("contador").innerHTML =
+      dias + "d " + horas + "h " + minutos + "m " + segundos + "s ";
+  }, 1000);
+}
+document.addEventListener("DOMContentLoaded", function () {
+  iniciarContador(2);
+});
+  </script>
+  <div class="section">
+   <div class="cta">
+    <a href="https://pay.cakto.com.br/gnrmatw_340923?affiliate=JHvnVVhw" target="_blank">
+     🚀 Quero acesso completo por R$47
+    </a>
+   </div>
+   <section class="benefits fade-in fade-delay-1">
+    <h2>
+     Por que escolher o ChatGPT Plus?
+    </h2>
     <ul>
-      <li><strong>GPT-4o:</strong> versão mais avançada do modelo da OpenAI</li>
-      <li><strong>Respostas rápidas:</strong> menos espera, mais resultado</li>
-      <li><strong>Prioridade de acesso:</strong> mesmo em horários de pico</li>
-      <li><strong>Funções extras:</strong> imagens, arquivos, voz e muito mais</li>
-      <li><strong>Criação de robôs personalizados:</strong> IA do seu jeito</li>
+     <li>
+      <strong>
+       GPT-4o:
+      </strong>
+      versão mais avançada do modelo da OpenAI
+     </li>
+     <li>
+      <strong>
+       Respostas rápidas:
+      </strong>
+      menos espera, mais resultado
+     </li>
+     <li>
+      <strong>
+       Prioridade de acesso:
+      </strong>
+      mesmo em horários de pico
+     </li>
+     <li>
+      <strong>
+       Funções extras:
+      </strong>
+      imagens, arquivos, voz e muito mais
+     </li>
+     <li>
+      <strong>
+       Criação de robôs personalizados:
+      </strong>
+      IA do seu jeito
+     </li>
     </ul>
-    <img src=https://imgur.com/a/daCRv4V" alt="Tecnologia" class="feature">
-  </section>
-
-  <section>
-    <h2>Ganhe um Mini E-book Exclusivo</h2>
-    <p>Ao garantir seu acesso, você recebe um e-book com prompts prontos para:</p>
+    <img alt="Tecnologia" class="feature" src="https://i.postimg.cc/GtHYtHyC/Chat-GPT-Image-10-de-mai-de-2025-18-58-34.png" style="max-width: 500px; width: 100%; margin: 20px auto; display: block; border-radius: 12px;"/>
+   </section>
+   <section class="fade-in fade-delay-2">
+    <h2>
+     Desbloqueie Segredos com Meu Mini E-book de Prompts
+    </h2>
+    <p>
+     Tenha ideias prontas para treinos, imagens, scripts e muito mais com apenas 1 clique.
+    </p>
     <ul>
-      <li>Montar treinos personalizados</li>
-      <li>Analisar imagens e documentos</li>
-      <li>Criar conteúdos criativos</li>
-      <li>Automatizar tarefas do dia a dia</li>
+     <li>
+      Montar treinos personalizados
+     </li>
+     <li>
+      Analisar imagens e documentos
+     </li>
+     <li>
+      Criar conteúdos criativos
+     </li>
+     <li>
+      Automatizar tarefas do dia a dia
+     </li>
     </ul>
     <div class="cta">
-      <a href="https://drive.google.com/file/d/1F6LCwNISnmkaE_WXYm3jwOl71sdnEABx/view?usp=sharing" target="_blank">Acessar E-book</a>
+     <a href="https://drive.google.com/file/d/1F6LCwNISnmkaE_WXYm3jwOl71sdnEABx/view?usp=sharing" target="_blank">
+      📥 Baixar agora grátis
+     </a>
     </div>
-    <img src="https://imgur.com/a/DJQmKUU" alt="Ebook" class="feature">
-  </section>
-
-  <section>
-    <h2>O que dizem nossos usuários</h2>
+    <img alt="Ebook" class="feature" src="https://i.postimg.cc/htbJS95m/Chat-GPT-Image-10-de-mai-de-2025-18-58-27.png" style="max-width: 500px; width: 100%; margin: 20px auto; display: block; border-radius: 12px;"/>
+   </section>
+   <section class="fade-in fade-delay-1">
+    <h2>
+     Esse acesso é pra você se...
+    </h2>
+    <ul>
+     <li>
+      Você quer criar treinos, vídeos e conteúdos incríveis com o apoio de uma IA inteligente
+     </li>
+     <li>
+      Já se frustrou com as limitações do ChatGPT gratuito travando ou não entendendo suas perguntas
+     </li>
+     <li>
+      Precisa de mais tempo e produtividade, automatizando tarefas e tendo ideias com criatividade
+     </li>
+     <li>
+      Quer ter acesso a recursos que só quem tem o Plus desbloqueia: geração de imagens, análise de arquivos, e muito mais
+     </li>
+    </ul>
+   </section>
+   <section class="fade-in fade-delay-4">
+    <h2>
+     O que dizem nossos usuários
+    </h2>
     <div class="testimonials">
+     <img src="https://i.pravatar.cc/40?img=12" style="border-radius:50%; vertical-align:middle; margin-right:10px;"/>
+     <span>
       "O ChatGPT Plus revolucionou minha forma de estudar e trabalhar. O e-book de prompts foi a cereja do bolo!"
+     </span>
     </div>
     <div class="testimonials">
+     <img src="https://i.pravatar.cc/40?img=18" style="border-radius:50%; vertical-align:middle; margin-right:10px;"/>
+     <span>
       "Com o acesso premium, minhas tarefas diárias ficaram muito mais simples e rápidas."
+     </span>
     </div>
-  </section>
-
-  <section>
-    <h2>Plano Acessível para Você</h2>
-    <p><strong>Valor:</strong> R$47,00 por ano (pagamento único)</p>
-    <p><strong>Inclui:</strong> Acesso Premium + Mini E-book de Prompts</p>
+   </section>
+   <section class="fade-in fade-delay-4">
+    <h2>
+     Plano Acessível para Você
+    </h2>
+    <p>
+     <strong>
+      Valor:
+     </strong>
+     R$47,00 por ano (pagamento único)
+    </p>
+    <p>
+     <strong>
+      Inclui:
+     </strong>
+     Acesso Premium + Mini E-book de Prompts
+    </p>
     <div class="cta">
-      <a href="https://pay.cakto.com.br/gnrmatw_340923?affiliate=JHvnVVhw" target="_blank">Adquirir Acesso Premium Agora</a>
+     <a href="https://pay.cakto.com.br/gnrmatw_340923?affiliate=JHvnVVhw" target="_blank">
+      🚀 Quero acesso completo por R$47
+     </a>
     </div>
+   </section>
+  </div>
+  <a class="whatsapp-float" href="https://wa.me/5577981546479?text=Olá%2C+preciso+de+ajuda+com+o+acesso+premium+do+ChatGPT" target="_blank">
+   <img alt="WhatsApp" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"/>
+   <span>
+    Precisa de ajuda?
+   </span>
+  </a>
+  <section class="fade-in fade-delay-4">
+   <h2 style="text-align:center;">
+    Perguntas e Respostas
+   </h2>
+   <div class="accordion">
+    <button class="accordion-btn">
+     Garantia de Satisfação
+    </button>
+    <div class="accordion-content">
+     <p>
+      Se você não estiver satisfeito em até 7 dias, pode solicitar reembolso total. Sem perguntas, sem burocracia.
+     </p>
+    </div>
+    <button class="accordion-btn">
+     Oferta por Tempo Limitado
+    </button>
+    <div class="accordion-content">
+     <p>
+      Este acesso compartilhado tem vagas limitadas. Garanta o seu agora antes que acabem!
+     </p>
+    </div>
+    <button class="accordion-btn">
+     A conta é compartilhada?
+    </button>
+    <div class="accordion-content">
+     <p>
+      Sim, mas você pode manter sua privacidade usando o modo temporário ou apagando o histórico.
+     </p>
+    </div>
+    <button class="accordion-btn">
+     Posso acessar com meu e-mail?
+    </button>
+    <div class="accordion-content">
+     <p>
+      Não. O acesso é fornecido por login e senha exclusivos.
+     </p>
+    </div>
+    <button class="accordion-btn">
+     Qual a diferença do gratuito para o Plus?
+    </button>
+    <div class="accordion-content">
+     <p>
+      O Plus oferece recursos como GPT-4o, imagens, voz, análise de arquivos e mais.
+     </p>
+    </div>
+    <button class="accordion-btn">
+     Tem suporte?
+    </button>
+    <div class="accordion-content">
+     <p>
+      Sim, via WhatsApp.
+     </p>
+    </div>
+    <button class="accordion-btn">
+     Funciona no aplicativo?
+    </button>
+    <div class="accordion-content">
+     <p>
+      Sim, direto no app do ChatGPT.
+     </p>
+    </div>
+   </div>
   </section>
+  <style>
+   .accordion-btn {
+    background-color: #10b981;
+    color: white;
+    cursor: pointer;
+    padding: 14px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    border-top: 1px solid #ffffff;
+  }
 
-  <section class="faq">
-    <h2>Dúvidas Frequentes</h2>
-    <p><strong>→ A conta é compartilhada?</strong><br> Sim, mas você pode manter sua privacidade usando o modo temporário ou apagando o histórico.</p>
-    <p><strong>→ Posso acessar com meu e-mail?</strong><br> Não. O acesso é fornecido por login e senha exclusivos.</p>
-    <p><strong>→ Qual a diferença do gratuito para o Plus?</strong><br> O Plus oferece recursos como GPT-4o, imagens, voz, análise de arquivos e mais.</p>
-    <p><strong>→ Tem suporte?</strong><br> Sim, via WhatsApp.</p>
-    <p><strong>→ Funciona no aplicativo?</strong><br> Sim, direto no app do ChatGPT.</p>
+  .accordion-btn:hover {
+    background-color: #0e9e6e;
+  }
+
+  .accordion-content {
+    display: none;
+    overflow: hidden;
+    background-color: #f0fdf4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  </style>
+  <script>
+   document.addEventListener("DOMContentLoaded", function () {
+    var acc = document.getElementsByClassName("accordion-btn");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].innerHTML = "🔽 " + acc[i].innerHTML;
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+          this.innerHTML = this.innerHTML.replace("🔼", "🔽");
+        } else {
+          content.style.display = "block";
+          this.innerHTML = this.innerHTML.replace("🔽", "🔼");
+        }
+      });
+    }
+  });
+  </script>
+  <section class="fade-in fade-delay-4" style="text-align:center; margin-top:40px;">
+   <p>
+    📤 Gostou? Compartilhe com alguém que precisa desbloquear o ChatGPT:
+   </p>
+   <a href="https://wa.me/?text=Olha%20esse%20acesso%20premium%20do%20ChatGPT%20com%20ebook:%20https://sophiecieloo.github.io/landing-chatgpt/" style="background-color:#10b981; padding:12px 20px; border-radius:8px; color:white; text-decoration:none; display:inline-block; font-weight:bold;" target="_blank">
+    Enviar no WhatsApp
+   </a>
   </section>
-</div>
+  <footer>
+   © 2025 Acesso Premium ChatGPT Plus. Todos os direitos reservados.
+  </footer>
+  <style>
+   @media (max-width: 768px) {
+    .cta-mobile {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #10b981;
+      text-align: center;
+      padding: 14px 0;
+      z-index: 999;
+    }
 
-<footer>
-  &copy; 2025 Acesso Premium ChatGPT Plus. Todos os direitos reservados.
-</footer>
-
-</body>
+    .cta-mobile a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+  </style>
+  <div class="cta-mobile">
+   <a href="https://pay.cakto.com.br/gnrmatw_340923?affiliate=JHvnVVhw" target="_blank">
+    🚀 Quero acesso completo por R$47
+   </a>
+  </div>
+ </body>
 </html>
